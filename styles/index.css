@@ -33,6 +33,10 @@ body {
 ul {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 
 h1 {
   font-family: "Fraunces", sans-serif;
@@ -46,18 +50,8 @@ h3 {
   color: var(--Very-dark-desaturated-blue);
 }
 
-/* HEADER */
-.header {
-  background: url("./../images/desktop/image-header.jpg") no-repeat center
-    center fixed;
-  background-size: cover;
-  min-height: 100vh;
-  width: auto;
-  display: grid;
-  place-items: center;
-  padding-top: 6rem;
-  padding-bottom: 10rem;
-}
+/* NAV */
+
 .nav {
   position: absolute;
   top: 0;
@@ -68,12 +62,16 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
+
 .nav__right {
   color: white;
   display: flex;
   gap: 2.5rem;
   align-items: center;
-  float: right;
+}
+
+.nav .burger {
+  display: none;
 }
 
 .nav__button,
@@ -82,20 +80,34 @@ h3 {
   font-family: "Fraunces", sans-serif;
   text-transform: uppercase;
   color: var(--Very-dark-desaturated-blue);
-
   font-weight: 900;
   background-color: white;
 }
+
 .nav__button {
   padding: 1rem 1.5rem;
   border-radius: 2rem;
   font-size: 0.75rem;
 }
 
+/* HEADER */
+.header {
+  background: url("./../images/desktop/image-header.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: auto;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+}
+
 /* ABOUT */
 .about {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
 }
 
 .about__square {
@@ -127,7 +139,7 @@ h3 {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 5rem 8rem;
+  padding: 10% 20%;
 }
 .graphic-design p,
 .graphic-design h2 {
@@ -158,7 +170,7 @@ h3 {
 
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
 
@@ -213,4 +225,8 @@ footer {
   gap: 2.5rem;
   align-items: center;
   padding: 2rem 0 0 0;
+}
+
+.footer_nav a {
+  color: var(--Dark-desaturated-cyan);
 }
