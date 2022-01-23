@@ -181,3 +181,16 @@ blockquote img {
 .testimonial__job {
   color: var(--Grayish-blue);
 }
+
+.gallery-showcase {
+  width: 100%;
+}
+.gallery-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.gallery-photo img {
+  width: 100%;
+}
