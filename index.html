@@ -3,209 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/queries.css" />
+    <!-- FONTS (in case local suffers any problem)-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Fira+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
-    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <!-- LINKS -->
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="resources/index.css" />
+    <title>Bending spoons | Problem 7</title>
   </head>
 
   <body>
-    <nav class="nav">
-      <img src="./images/logo.svg" alt="logo" />
-
-      <a href="javascript:void(0);" onclick="myFunction()" class="burger">
-        <img src="./images/icon-hamburger.svg" alt="burger icon" />
+    <div class="background">
+      <a href="/#">
+        <img
+          class="close"
+          alt="background-img"
+          src="resources/images/close.png"
+        />
       </a>
+      <header>
+        <h1 class="h1">START TRAINING LIKE A PRO.</h1>
 
-      <ul class="nav__right" id="topnav">
-        <li><a href="/#">About</a></li>
-        <li><a href="/#">Services</a></li>
-        <li><a href="/#">Projects</a></li>
-        <li>
-          <button class="nav__button">Contact</button>
-        </li>
-      </ul>
-    </nav>
-    <header class="header">
-      <h1>We are creatives</h1>
-      <img src="./images/icon-arrow-down.svg" alt="arrow-down" />
-    </header>
-    <main>
-      <section class="section-about">
-        <div class="about">
-          <div class="about__square">
-            <h2>Transform your brand</h2>
-            <p>
-              We are a full-service creative agency specializing in helping
-              brands grow fast. Engage your clients through compelling visuals
-              that do most of the marketing for you.
-            </p>
-            <a class="about__button" href="/#">
-              <span class="highlight">Learn more</span>
-            </a>
-          </div>
+        <p class="label">Join Millions of Happy Users</p>
+        <div class="rating label">
           <img
-            src="./images/desktop/image-transform.jpg"
-            alt="transforms"
-            class="about--left"
-            alt="image-transform"
+            class="stars"
+            alt="rating stars"
+            src="resources/images/stars.png"
           />
+          Rating
         </div>
-        <div class="about">
-          <img src="./images/desktop/image-stand-out.jpg" alt="stand out" />
-
-          <div class="about__square">
-            <h2>Stand out to the right audience</h2>
-            <p>
-              Using a collaborative formula of designers, researchers,
-              photographers, videographers, and copywriters, we'll build and
-              extend your brand in digital places.
-            </p>
-            <a class="about__button" href="/#">
-              <span class="highlight">Learn more</span>
-            </a>
-          </div>
-        </div>
-        <div class="about">
-          <div style="position: relative">
+      </header>
+      <main>
+        <ul class="features">
+          <li class="feature">
             <img
-              src="./images/desktop/image-graphic-design.jpg"
-              alt="graphic design"
+              class="checkmark"
+              alt="checkmark"
+              src="resources/images/Checkmark 1.png"
             />
-            <div class="about__square graphic-design">
-              <h2>Graphic design</h2>
-              <p>
-                Great design makes you memorable. We deliver artwork that
-                underscores your brand message and captures potential clients’
-                attention.
-              </p>
-            </div>
-          </div>
-
-          <div style="position: relative">
+            <h3>PERSONALIZED TRAINING PLAN</h3>
+            <p>Adapting to your goals.</p>
+          </li>
+          <li class="feature">
             <img
-              src="./images/desktop/image-photography.jpg"
-              alt="photography"
+              class="checkmark"
+              alt="checkmark"
+              src="resources/images/Checkmark 1.png"
             />
-            <div class="about__square photography">
-              <h2>Photography</h2>
-              <p>
-                Increase your credibility by getting the most stunning,
-                high-quality photos that improve your business image.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-testimonials">
-        <h2>Client testimonials</h2>
-        <div class="testimonials">
-          <blockquote>
-            <img src="./images/image-emily.jpg" alt="testimonial" />
-            <p class="testimonial__quote">
-              We put our trust in Sunnyside and they delivered, making sure our
-              needs were met and deadlines were always hit.
-            </p>
-            <h3 class="testimonial__name">Emily R.</h3>
-            <p class="testimonial__job">Marketing Director</p>
-          </blockquote>
-          <blockquote>
-            <img src="./images/image-thomas.jpg" alt="tertimonial" />
-            <p class="testimonial__quote">
-              Sunnyside's enthusiasm coupled with their keen interest in our
-              brand's success made it a satisfying and enjoyable experience.
-            </p>
-            <h3 class="testimonial__name">Thomas S.</h3>
-            <p class="testimonial__job">Chief Operating Officer</p>
-          </blockquote>
-          <blockquote>
-            <img src="./images/image-jennie.jpg" alt="tertimonial" />
-            <p class="testimonial__quote">
-              Incredible end result! Our sales increased over 400% when we
-              worked with Sunnyside. Highly recommended!
-            </p>
-            <h3 class="testimonial__name">Jennie F.</h3>
-            <p class="testimonial__job">Business Owner</p>
-          </blockquote>
-        </div>
-      </section>
-
-      <ul class="gallery-showcase">
-        <li class="gallery-photo">
-          <img
-            src="./images/desktop/image-gallery-milkbottles.jpg"
-            alt="milkbottles"
-          />
-        </li>
-        <li class="gallery-photo">
-          <img src="./images/desktop/image-gallery-orange.jpg" alt="orange" />
-        </li>
-        <li class="gallery-photo">
-          <img src="./images/desktop/image-gallery-cone.jpg" alt="cone" />
-        </li>
-        <li class="gallery-photo">
-          <img
-            src="./images/desktop/image-gallery-sugarcubes.jpg"
-            alt="sugarcubes"
-          />
-        </li>
-      </ul>
-
-      <footer>
-        <img src="./images/logo-footer.svg" alt="logo footer" />
-        <ul class="footer_nav">
-          <li><a href="/#">About</a></li>
-          <li><a href="/#">Services</a></li>
-          <li><a href="/#">Projects</a></li>
-        </ul>
-        <ul class="footer_nav">
-          <li>
-            <a href="#"
-              ><img src="./images/icon-facebook.svg" alt="facebook link"
-            /></a>
+            <h3>60+ BODYWEIGHT EXCERCISES</h3>
+            <p>All with HD Video.</p>
           </li>
-          <li>
-            <a href="#"
-              ><img src="./images/icon-instagram.svg" alt="instagram link"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./images/icon-twitter.svg" alt="twitter link"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./images/icon-pinterest.svg" alt="pinterest link"
-            /></a>
+          <li class="feature">
+            <img
+              class="checkmark"
+              alt="checkmark"
+              src="resources/images/Checkmark 1.png"
+            />
+            <h3>300+ PREDEFINED WORKOUTS</h3>
+            <p>For all fitness levels.</p>
           </li>
         </ul>
-      </footer>
-    </main>
-
-    <script>
-      function myFunction() {
-        var x = document.getElementById("topnav");
-        if (x.className === "nav__right") {
-          x.className += " responsive";
-        } else {
-          x.className = "nav__right";
-        }
-      }
-    </script>
+        <div class="container">
+          <a class="text-small" href="/#">Restore Purchases</a>
+          <button class="main-button">
+            <h4>TRY 1 WEEK FOR FREE</h4>
+            <p class="label">$9.99/week after</p>
+          </button>
+          <p class="text-small">
+            By subscribing, you get unlimited access to 420 workouts and 97
+            exercises. Your subscription will automatically renew at the end of
+            each term.
+          </p>
+        </div>
+      </main>
+      <img class="light" alt="light" src="resources/images/light.png" />
+    </div>
   </body>
 </html>

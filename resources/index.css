@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-prim: #13d68f;
+  --clr-sec: #f85036;
+  --text-prim: #1e2333;
+  --text-sec: #414141;
+}
+
+html,
+body {
+  font-size: 18px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  font-family: "Barlow", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url(../resources/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf),
+    url(../resources/fonts/Barlow_Condensed/BarlowCondensed-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../resources/fonts/Fira_Sans/FiraSans-Regular.ttf),
+    url(../resources/fonts/Fira_Sans/FiraSans-Medium.ttf),
+    url(../resources/fonts/Fira_Sans/FiraSans-SemiBold.ttf);
+}
+
+header {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.background {
+  background: url(../resources/images/background.png) no-repeat;
+}
+
+/* FIXED IMAGES */
+.close {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 11px;
+  left: 10px;
+}
+.light {
+  position: absolute;
+}
+
+/* TEXT STYLES */
+.h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px black;
+  padding: 114.5px 54px 34.8px 55px;
+  font-size: 40px;
+}
+.label {
+  padding-bottom: 5px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+}
+
+.text-small {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--text-sec);
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 0.5rem;
+  justify-self: center;
+}
+
+/* HEADER */
+header p {
+  font-weight: 600;
+  color: var(--text-prim);
+  padding-bottom: 5px;
+}
+.rating {
+  padding-bottom: 51.7px;
+  color: var(--clr-sec);
+  font-size: 15px;
+}
+.stars {
+  width: 113.03px;
+  height: 19.27px;
+}
+
+/* FEATURES */
+.features {
+  padding: 0px 44px 52.8px 47.7px;
+}
+
+.feature {
+  margin-bottom: 29px;
+}
+.feature:last-child {
+  margin-bottom: 0px;
+}
+.feature h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #1e2333;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.feature p {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--clr-prim);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.checkmark {
+  float: left;
+  width: 23.4px;
+  height: 23.4px;
+  margin-right: 18.9px;
+}
+
+/* ACTION */
+.main-button {
+  background-color: var(--clr-prim);
+  border: none;
+  border-radius: 45.24px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  color: white;
+  width: 100%;
+  margin-bottom: 22px;
+  transition: all 0.3s;
+}
+
+.main-button:hover {
+  transform: scale(1.1);
+}
+.main-button h4 {
+  padding-bottom: 2px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.main-button p {
+  opacity: 0.8;
+  font-weight: 400;
+}
